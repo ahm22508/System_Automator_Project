@@ -1,0 +1,23 @@
+from Stop_Actions import Cut
+from Replay_Actions import Replaying
+
+
+actions = []
+recording = False
+start_time = None
+
+
+while True:
+    print("\n1. Start recording\n2. Replay actions\n3. Quit")
+    choice = input("Select: ").strip()
+
+    if choice == "1":
+        CutActions = Cut
+        CutActions.start_recording()
+    elif choice == "2":
+       RedoActions = Replaying     
+       RedoActions.replay_actions()
+    elif choice == "3":
+        break
+    else:
+        print("Invalid input.")
