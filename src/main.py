@@ -1,4 +1,4 @@
-from Stop_Actions import Cut
+from Recording_Actions import Action
 from Replay_Actions import Replaying
 
 
@@ -12,8 +12,8 @@ while True:
     choice = input("Select: ").strip()
 
     if choice == "1":
-        CutActions = Cut
-        CutActions.start_recording()
+        action = Action
+        action.Start_Recording()
     elif choice == "2":
        RedoActions = Replaying     
        RedoActions.replay_actions()

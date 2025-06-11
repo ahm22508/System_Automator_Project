@@ -5,10 +5,10 @@ actions = []
 
 class Cut:
     def on_release(key):
-        global recording
+        global Recording 
         if key == keyboard.Key.esc:
-            recording = False
-            print("🛑 Recording stopped.")
-            with open("actions.json", "w") as f:
-                json.dump(actions, f, indent=2)
-        return False
+            Recording = False
+            with open("C:\\Automator_System\\ActionFile\\Recorded_Actions.json" , "w") as d:
+                json.dump(actions , d , indent=2)
+
+        return False        
