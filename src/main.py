@@ -12,10 +12,10 @@ while True:
     choice = input("Select: ").strip()
 
     if choice == "1":
-        action = Action
+        action = Action()
         action.Start_Recording()
     elif choice == "2":
-       RedoActions = Replaying     
+       RedoActions = Replaying()     
        RedoActions.replay_actions()
     elif choice == "3":
         break
