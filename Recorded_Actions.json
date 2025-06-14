@@ -1,0 +1,167 @@
+[
+  {
+    "type": "Mouse_Click",
+    "x": 1773,
+    "y": 33,
+    "button": "Button.left",
+    "Pressed": true,
+    "time": 3.3634979724884033
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 1773,
+    "y": 33,
+    "button": "Button.left",
+    "Pressed": false,
+    "time": 3.443527936935425
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 1010,
+    "y": 369,
+    "button": "Button.right",
+    "Pressed": true,
+    "time": 4.96317982673645
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 1008,
+    "y": 370,
+    "button": "Button.right",
+    "Pressed": false,
+    "time": 5.058876276016235
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 1011,
+    "y": 386,
+    "button": "Button.right",
+    "Pressed": true,
+    "time": 6.987096786499023
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 1011,
+    "y": 386,
+    "button": "Button.right",
+    "Pressed": false,
+    "time": 7.2114098072052
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 929,
+    "y": 417,
+    "button": "Button.right",
+    "Pressed": true,
+    "time": 8.011281251907349
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 927,
+    "y": 417,
+    "button": "Button.right",
+    "Pressed": false,
+    "time": 8.195666074752808
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 927,
+    "y": 418,
+    "button": "Button.right",
+    "Pressed": true,
+    "time": 8.715673685073853
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 814,
+    "y": 524,
+    "button": "Button.right",
+    "Pressed": false,
+    "time": 9.187416076660156
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 836,
+    "y": 387,
+    "button": "Button.right",
+    "Pressed": true,
+    "time": 9.61862325668335
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 837,
+    "y": 388,
+    "button": "Button.right",
+    "Pressed": false,
+    "time": 9.747406005859375
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 757,
+    "y": 290,
+    "button": "Button.left",
+    "Pressed": true,
+    "time": 11.794949293136597
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 757,
+    "y": 290,
+    "button": "Button.left",
+    "Pressed": false,
+    "time": 11.907044410705566
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 757,
+    "y": 290,
+    "button": "Button.right",
+    "Pressed": true,
+    "time": 12.155308485031128
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 757,
+    "y": 290,
+    "button": "Button.right",
+    "Pressed": false,
+    "time": 12.267092943191528
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 787,
+    "y": 400,
+    "button": "Button.left",
+    "Pressed": true,
+    "time": 13.43465280532837
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 787,
+    "y": 400,
+    "button": "Button.left",
+    "Pressed": false,
+    "time": 13.52342677116394
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 659,
+    "y": 1059,
+    "button": "Button.left",
+    "Pressed": true,
+    "time": 15.027401447296143
+  },
+  {
+    "type": "Mouse_Click",
+    "x": 659,
+    "y": 1059,
+    "button": "Button.left",
+    "Pressed": false,
+    "time": 15.106665134429932
+  },
+  {
+    "type": "Key_Press",
+    "key": "Key.esc",
+    "time": 16.47197675704956
+  }
+]

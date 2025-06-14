@@ -2,11 +2,6 @@ from Recording_Actions import Action
 from Replay_Actions import Replaying
 
 
-actions = []
-recording = False
-start_time = None
-
-
 while True:
     print("\n1. Start recording\n2. Replay actions\n3. Quit")
     choice = input("Select: ").strip()
@@ -15,8 +10,9 @@ while True:
         action = Action()
         action.Start_Recording()
     elif choice == "2":
-       RedoActions = Replaying()     
+       RedoActions = Replaying()
        RedoActions.replay_actions()
+
     elif choice == "3":
         break
     else:

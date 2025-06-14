@@ -1,21 +1,22 @@
-import json
+from ActionFileManagement import FileManaging
 import time
 import pyautogui
 
-actions = []
 
 class Replaying:
-    def replay_actions():
-        global actions
-        with open("C:\\Automator_System\\ActionFile\\Recorded_Actions.json" , "r") as d:
-            actions = json.load(d)
+
+    def __init__(self):
+        self.fileManager = FileManaging([])
+
+    def replay_actions(self):
         start = time.time()
-        for action in actions:
+        
+        File = self.fileManager.load_Action_File()
+        for action in File:
             delay = action['time'] - (time.time() - start)
             if delay > 0:
                 time.sleep(delay)
-
-            if action['type'] == 'mouse click' and action['pressed']:
+            if action['type'] == 'Mouse_Click' and action['Pressed']:
                 pyautogui.click(action['x']  , action['y'] , button=action['button'].split('.')[-1])
-            elif action['type'] == 'key_press':
+            elif action['type'] == 'Key_Press':
                 pyautogui.typewrite(action['key'])    

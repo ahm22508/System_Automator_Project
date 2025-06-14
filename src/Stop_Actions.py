@@ -1,14 +1,12 @@
-import json
 from pynput import keyboard
-
-actions = []
+from ActionFileManagement import FileManaging
 
 class Cut:
-    def on_release(key):
-        global Recording 
-        if key == keyboard.Key.esc:
-            Recording = False
-            with open("C:\\Automator_System\\ActionFile\\Recorded_Actions.json" , "w") as d:
-                json.dump(actions , d , indent=2)
+    def __init__(self , actions):
+        self.actions =actions
 
-        return False        
+    def on_release(self , key):
+        if key == keyboard.Key.esc:
+           File = FileManaging(self.actions)
+           File.update_Action_file()     
+           return False        
