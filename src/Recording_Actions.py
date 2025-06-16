@@ -1,50 +1,50 @@
 import time
 from pynput import mouse, keyboard
 from Stop_Actions import Cut
-from ActionFileManagement import FileManaging
+from Base import AutomationComponent
 
-class Action(FileManaging):
-
+class Action(AutomationComponent):
     def __init__(self):
+        super().__init__()
         self.actions = []
         self.time_start = None
-        self.Recording = False
+        self.recording = False
 
-
-
-    def on_press(self ,key):
-        if self.Recording:
+    def on_press(self, key):
+        if self.recording:
             try:
-                Key_Str = key.char
+                key_str = key.char  # Regular character key
             except AttributeError:
-                Key_Str = str(key)
+                key_str = str(key)  # Special key
             self.actions.append({
-              'type' : 'Key_Press',
-               'key'  : Key_Str,
-               'time' : time.time() - self.time_start
-                })
+                'type': 'key_press',
+                'key': key_str,
+                'time': time.time() - self.time_start
+            })  # Append key press event
 
-    def on_click(self,x , y , button , Pressed):
-     if self.Recording:
-         self.actions.append({
-             'type' : 'Mouse_Click',
-             'x' : x,
-             'y' : y ,
-             'button' : str(button) ,
-             'Pressed' : Pressed,
-             'time': time.time() - self.time_start
+    def on_click(self, x, y, button, pressed):
+        if self.recording:
+            self.actions.append({
+                'type': 'mouse_click',
+                'x': x,
+                'y': y,
+                'button': str(button),
+                'pressed': pressed,
+                'time': time.time() - self.time_start
+            })  # Append mouse click event
 
-         })
+    def start_recording(self):
+        self.actions = []
+        self.time_start = time.time()  # Record start time
+        self.recording = True
 
-    def Start_Recording(self):
-            self.actions = []
-            self.time_start = time.time()
-            self.Recording = True
-            FileManaging.actions = self.actions
-            CutHandler = Cut(self.actions)    
-            self.Mouse_Listener = mouse.Listener(on_click= self.on_click)
-            self.Keyboard_Listener = keyboard.Listener(on_press= self.on_press , on_release=CutHandler.on_release) 
+        cut_handler = Cut(self.actions, self.file_manager)  # Handler to stop and save
+        self.mouse_listener = mouse.Listener(on_click=self.on_click)
+        self.keyboard_listener = keyboard.Listener(
+            on_press=self.on_press,
+            on_release=cut_handler.on_release
+        )
 
-            self.Mouse_Listener.start()
-            self.Keyboard_Listener.start()
-            self.Keyboard_Listener.join()
+        self.mouse_listener.start()
+        self.keyboard_listener.start()
+        self.keyboard_listener.join()  # Wait for ESC to stop

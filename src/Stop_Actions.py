@@ -1,12 +1,11 @@
 from pynput import keyboard
-from ActionFileManagement import FileManaging
 
 class Cut:
-    def __init__(self , actions):
-        self.actions =actions
+    def __init__(self, actions, file_manager):
+        self.actions = actions
+        self.file_manager = file_manager 
 
-    def on_release(self , key):
+    def on_release(self, key):
         if key == keyboard.Key.esc:
-           File = FileManaging(self.actions)
-           File.update_Action_file()     
-           return False        
+            self.file_manager.save(self.actions) 
+            return False 

@@ -1,103 +1,55 @@
 [
   {
-    "type": "Mouse_Click",
-    "x": 24,
-    "y": 1050,
+    "type": "mouse_click",
+    "x": 40,
+    "y": 1035,
     "button": "Button.left",
-    "Pressed": true,
-    "time": 2.178352117538452
+    "pressed": true,
+    "time": 3.4000256061553955
   },
   {
-    "type": "Mouse_Click",
-    "x": 24,
-    "y": 1050,
+    "type": "mouse_click",
+    "x": 40,
+    "y": 1035,
     "button": "Button.left",
-    "Pressed": false,
-    "time": 2.273698329925537
+    "pressed": false,
+    "time": 3.620729446411133
   },
   {
-    "type": "Mouse_Click",
-    "x": 24,
-    "y": 1050,
+    "type": "mouse_click",
+    "x": 40,
+    "y": 1035,
     "button": "Button.left",
-    "Pressed": true,
-    "time": 2.8089170455932617
+    "pressed": true,
+    "time": 4.421581745147705
   },
   {
-    "type": "Mouse_Click",
-    "x": 24,
-    "y": 1050,
+    "type": "mouse_click",
+    "x": 40,
+    "y": 1035,
     "button": "Button.left",
-    "Pressed": false,
-    "time": 2.9204018115997314
+    "pressed": false,
+    "time": 4.642601490020752
   },
   {
-    "type": "Mouse_Click",
-    "x": 24,
-    "y": 1050,
+    "type": "mouse_click",
+    "x": 424,
+    "y": 989,
     "button": "Button.left",
-    "Pressed": true,
-    "time": 3.3576159477233887
+    "pressed": true,
+    "time": 6.310944318771362
   },
   {
-    "type": "Mouse_Click",
-    "x": 24,
-    "y": 1050,
+    "type": "mouse_click",
+    "x": 424,
+    "y": 989,
     "button": "Button.left",
-    "Pressed": false,
-    "time": 3.45790433883667
+    "pressed": false,
+    "time": 6.5321643352508545
   },
   {
-    "type": "Mouse_Click",
-    "x": 24,
-    "y": 1050,
-    "button": "Button.left",
-    "Pressed": true,
-    "time": 3.916238307952881
-  },
-  {
-    "type": "Mouse_Click",
-    "x": 25,
-    "y": 1050,
-    "button": "Button.left",
-    "Pressed": false,
-    "time": 4.027496814727783
-  },
-  {
-    "type": "Mouse_Click",
-    "x": 25,
-    "y": 1050,
-    "button": "Button.left",
-    "Pressed": true,
-    "time": 4.411006450653076
-  },
-  {
-    "type": "Mouse_Click",
-    "x": 25,
-    "y": 1050,
-    "button": "Button.left",
-    "Pressed": false,
-    "time": 4.522811412811279
-  },
-  {
-    "type": "Mouse_Click",
-    "x": 25,
-    "y": 1050,
-    "button": "Button.left",
-    "Pressed": true,
-    "time": 4.883761882781982
-  },
-  {
-    "type": "Mouse_Click",
-    "x": 25,
-    "y": 1050,
-    "button": "Button.left",
-    "Pressed": false,
-    "time": 4.99682354927063
-  },
-  {
-    "type": "Key_Press",
+    "type": "key_press",
     "key": "Key.esc",
-    "time": 6.267806053161621
+    "time": 6.83769679069519
   }
 ]
