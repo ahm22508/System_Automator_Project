@@ -5,7 +5,7 @@ class AutomationController:
     def __init__(self):
         self.action_recorder = Action()
         self.replayer = Replaying()
-        self.running = True # Main loop control
+        self.running = True 
 
     def display_menu(self):
         print("\n1. Start recording")
@@ -25,7 +25,7 @@ class AutomationController:
     def run(self):
         while self.running:
             self.display_menu()
-            choice = input("Select: ").strip() # User input
+            choice = input("Select: ").strip() 
             self.handle_choice(choice)
 
 if __name__ == "__main__":
