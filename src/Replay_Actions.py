@@ -10,7 +10,7 @@ class Replaying:
         actions = file.load() 
         start = time.time() 
 
-        for action in actions:
+        for action in actions[:-1]:
             delay = action['time'] - (time.time() - start)
             if delay > 0:
                 time.sleep(delay) 
